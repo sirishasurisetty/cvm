@@ -11,6 +11,13 @@ app.get('/', (req,res, next) =>{
         res.send('HelloSiri');
 
     })
+
+app.get('/signin', (req,res, next) =>{
+    
+     
+        res.send('Please enter the valid details to signin here');
+
+    })
  connectDB();   
  app.use(cors());
  app.use(bodyParser.json());
